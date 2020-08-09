@@ -1,9 +1,14 @@
-Zadanie rekrutacyjne
+# Zadanie rekrutacyjne
+
 Zadanie polega na przygotowaniu usługi REST która zwróci:
-• stronicowaną listę bohaterów Gwiezdnych Wojen
-• szczegóły poszczególnych bohaterów.
+- stronicowaną listę bohaterów Gwiezdnych Wojen
+- szczegóły poszczególnych bohaterów.
+
 API powinno wystawiać dwie końcówki:
+```bash
 GET /characters?page=x
+```
+```json
 {
 "count": 82,
 "pages": 9,
@@ -63,7 +68,11 @@ GET /characters?page=x
 }
 ]
 }
+```
+```bash
 GET /characters/{id}
+```
+```json
 {
 "id": 1,
 "name": "Luke Skywalker",
@@ -117,36 +126,30 @@ GET /characters/{id}
 }
 ]
 }
-Wymagania
+```
+
+# Wymagania
 Wymagania poza funkcjonalne
-•
-•
-•
-powinna być w stanie obsłużyć 20 zapytań na sekundę (nie powinna zawierać oczywistych
-wąskich gardeł)
-pełny zestaw testów uruchamiany wraz z narzędziem budującym (Maven lub Gradle)
-dobry projekt i jakość kodu
+-powinna być w stanie obsłużyć 20 zapytań na sekundę (nie powinna zawierać oczywistych wąskich gardeł)
+-pełny zestaw testów uruchamiany wraz z narzędziem budującym (Maven lub Gradle)
+-dobry projekt i jakość kodu
+
 Dodatkowe wymagania
-•
-•
-•
-•
-obsługa i logowanie błędów
-konfiguracja Swagger UI
-dokeryzacja aplikacji
-przygotowanie do monitorowania przy pomocy Prometheus
-Technologie
+- obsługa i logowanie błędów
+- konfiguracja Swagger UI
+- dokeryzacja aplikacji
+- przygotowanie do monitorowania przy pomocy Prometheus
+
+# Technologie
 Wymagane technologie
-•
-Java 11
+- Java 11
 Zalecane technologie:
-•
-•
-Spring
-Spock
-Dodatkowe uwagi
-Informację o bohaterach Gwiezdnych Wojen można znaleźć pod adresem: https://swapi.dev/.
-Zadanie można modyfikować o ile wszelkie zmiany zatną logicznie udokumentowane.
-Rozwiązanie należy umieścić na prywatnym repozytorium na https://github.com.
-Należy utworzyć Pull Request z dowolnego brancha do mastera.
-Nadać uprawnienia do zapisu naszemu użytkownikowi: NASK-DRSI
+- Spring
+- Spock
+
+# Dodatkowe uwagi
+- Informację o bohaterach Gwiezdnych Wojen można znaleźć pod adresem: https://swapi.dev/.
+- Zadanie można modyfikować o ile wszelkie zmiany zatną logicznie udokumentowane.
+- Rozwiązanie należy umieścić na prywatnym repozytorium na https://github.com.
+- Należy utworzyć Pull Request z dowolnego brancha do mastera.
+- Nadać uprawnienia do zapisu naszemu użytkownikowi: NASK-DRSI
